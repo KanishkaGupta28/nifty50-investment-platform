@@ -174,7 +174,7 @@ Open browser at `http://localhost:8501`
 ---
 
 ##  Requirements
-
+```
 See `requirements.txt` for full list. Key dependencies:
 pandas
 numpy
@@ -187,6 +187,7 @@ ta
 matplotlib
 seaborn
 statsmodels
+```
 ---
 
 ##  Key Insights
