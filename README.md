@@ -22,6 +22,7 @@ This platform provides:
 ---
 
 ##  Project Structure
+```
 nifty50-investment-platform/
 │
 ├── app/
@@ -47,6 +48,7 @@ nifty50-investment-platform/
 │
 ├── requirements.txt          # Dependencies
 └── README.md                 # This file
+```
 ---
 
 ##  Getting Started
