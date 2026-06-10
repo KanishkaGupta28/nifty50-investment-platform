@@ -4,6 +4,7 @@ __pycache__/
 *.pyo
 .ipynb_checkpoints/
 *.keras
-data/raw/
 *.zip
 .env
+data/raw/stocks/*.csv
+data/raw/indices/
