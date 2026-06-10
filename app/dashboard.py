@@ -85,7 +85,7 @@ st.sidebar.markdown("### Dataset Info")
 st.sidebar.success(
     f"**Stocks:** {df['Symbol'].nunique()}\n\n"
     f"**Period:** 2000 - 2021\n\n"
-    f"**Records:** {len(df):,}\n\n"
+    
     f"**Trading Days:** 2,099"
 )
 

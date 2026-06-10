@@ -26,28 +26,57 @@ This platform provides:
 nifty50-investment-platform/
 │
 ├── app/
-│   └── dashboard.py          # Streamlit web application
+│   └── dashboard.py                    # Streamlit web application (6 pages)
 │
 ├── data/
-│   ├── raw/                  # Raw stock CSV files (not uploaded)
-│   └── processed/            # Processed features and results
+│   ├── raw/
+│   │   └── stocks/
+│   │       └── stock_metadata.csv      # Company sector information
+│   └── processed/                      # Feature engineered data & results
+│       ├── all_stocks_featured.csv     # 117,464 rows × 37 features
+│       ├── portfolio_weights.csv       # Portfolio allocations (3 profiles)
+│       ├── portfolio_risk.csv          # Portfolio risk metrics
+│       ├── risk_metrics.csv            # Individual stock risk metrics
+│       └── hdfcbank_predictions.csv    # LSTM model predictions
 │
 ├── notebooks/
 │   ├── 01_EDA.ipynb                    # Exploratory Data Analysis
-│   ├── 02_feature_engineering.ipynb    # Technical indicators
-│   ├── 03_stock_predictor.ipynb        # LSTM model
+│   ├── 02_feature_engineering.ipynb    # Technical indicators (37 features)
+│   ├── 03_stock_predictor.ipynb        # LSTM deep learning model
 │   ├── 04_portfolio_construction.ipynb # Portfolio optimization
-│   └── 05_risk_assessment.ipynb        # Risk metrics
+│   └── 05_risk_assessment.ipynb        # Risk metrics & VaR analysis
+│
+├── outputs/
+│   ├── best_worst_stocks.png           # Top/bottom performing stocks
+│   ├── correlation_heatmap.png         # Stock correlation matrix
+│   ├── drawdown_analysis.png           # Drawdown analysis chart
+│   ├── efficient_frontier.png          # Portfolio efficient frontier
+│   ├── lstm_predictions.png            # LSTM vs actual prices
+│   ├── lstm_training_history.png       # Model training history
+│   ├── model_comparison.png            # Model comparison chart
+│   ├── portfolio_allocation.png        # 3 investor profile allocations
+│   ├── portfolio_growth.png            # Investment growth simulation
+│   ├── reliance_price_volume.png       # Reliance price & volume chart
+│   ├── returns_distribution.png        # Daily returns distribution
+│   ├── risk_dashboard.png              # Risk metrics dashboard
+│   ├── sector_distribution.png         # Sector analysis chart
+│   ├── technical_indicators.png        # RSI MACD Bollinger Bands
+│   ├── var_analysis.png                # Value at Risk analysis
+│   └── yearly_trend.png               # Market yearly trend
 │
 ├── src/
-│   ├── data_loader.py        # Data loading utilities
-│   ├── features.py           # Feature engineering
-│   ├── models.py             # ML model definitions
-│   ├── portfolio.py          # Portfolio optimization
-│   └── risk.py               # Risk calculations
+│   ├── data_loader.py                  # Data loading utilities
+│   ├── features.py                     # Feature engineering functions
+│   ├── models.py                       # ML model definitions
+│   ├── portfolio.py                    # Portfolio optimization logic
+│   └── risk.py                         # Risk calculation functions
 │
-├── requirements.txt          # Dependencies
-└── README.md                 # This file
+├── models/
+│   └── lstm_hdfcbank.keras             # Trained LSTM model
+│
+├── runtime.txt                         # Python 3.11 for deployment
+├── requirements.txt                    # Project dependencies
+└── README.md                           # Project documentation
 ```
 ---
 
