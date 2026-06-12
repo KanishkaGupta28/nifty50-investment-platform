@@ -8,6 +8,10 @@ An AI-powered investment intelligence platform that transforms 21 years of NIFTY
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
+##  Live Demo
+ [Click here to view the Live Dashboard](https://nifty50-investment-platformtettekpot9neqsrw84bevc.streamlit.app/)
+
+---
 
 ##  Project Overview
 
@@ -24,58 +28,113 @@ This platform provides:
 ##  Project Structure
 ```
 nifty50-investment-platform/
+
 │
+
 ├── app/
+
 │   └── dashboard.py                    # Streamlit web application (6 pages)
+
 │
+
 ├── data/
+
 │   ├── raw/
+
 │   │   └── stocks/
+
 │   │       └── stock_metadata.csv      # Company sector information
+
 │   └── processed/                      # Feature engineered data & results
+
 │       ├── all_stocks_featured.csv     # 117,464 rows × 37 features
+
 │       ├── portfolio_weights.csv       # Portfolio allocations (3 profiles)
+
 │       ├── portfolio_risk.csv          # Portfolio risk metrics
+
 │       ├── risk_metrics.csv            # Individual stock risk metrics
+
 │       └── hdfcbank_predictions.csv    # LSTM model predictions
+
 │
+
 ├── notebooks/
+
 │   ├── 01_EDA.ipynb                    # Exploratory Data Analysis
+
 │   ├── 02_feature_engineering.ipynb    # Technical indicators (37 features)
+
 │   ├── 03_stock_predictor.ipynb        # LSTM deep learning model
+
 │   ├── 04_portfolio_construction.ipynb # Portfolio optimization
+
 │   └── 05_risk_assessment.ipynb        # Risk metrics & VaR analysis
+
 │
+
 ├── outputs/
-│   ├── best_worst_stocks.png           # Top/bottom performing stocks
-│   ├── correlation_heatmap.png         # Stock correlation matrix
-│   ├── drawdown_analysis.png           # Drawdown analysis chart
-│   ├── efficient_frontier.png          # Portfolio efficient frontier
-│   ├── lstm_predictions.png            # LSTM vs actual prices
-│   ├── lstm_training_history.png       # Model training history
-│   ├── model_comparison.png            # Model comparison chart
-│   ├── portfolio_allocation.png        # 3 investor profile allocations
-│   ├── portfolio_growth.png            # Investment growth simulation
-│   ├── reliance_price_volume.png       # Reliance price & volume chart
-│   ├── returns_distribution.png        # Daily returns distribution
-│   ├── risk_dashboard.png              # Risk metrics dashboard
-│   ├── sector_distribution.png         # Sector analysis chart
-│   ├── technical_indicators.png        # RSI MACD Bollinger Bands
-│   ├── var_analysis.png                # Value at Risk analysis
-│   └── yearly_trend.png               # Market yearly trend
+
+│   ├── best_worst_stocks.png
+
+│   ├── correlation_heatmap.png
+
+│   ├── drawdown_analysis.png
+
+│   ├── efficient_frontier.png
+
+│   ├── lstm_predictions.png
+
+│   ├── lstm_training_history.png
+
+│   ├── model_comparison.png
+
+│   ├── portfolio_allocation.png
+
+│   ├── portfolio_growth.png
+
+│   ├── reliance_price_volume.png
+
+│   ├── returns_distribution.png
+
+│   ├── risk_dashboard.png
+
+│   ├── sector_distribution.png
+
+│   ├── technical_indicators.png
+
+│   ├── var_analysis.png
+
+│   └── yearly_trend.png
+
 │
+
 ├── src/
+
 │   ├── data_loader.py                  # Data loading utilities
+
 │   ├── features.py                     # Feature engineering functions
+
 │   ├── models.py                       # ML model definitions
+
 │   ├── portfolio.py                    # Portfolio optimization logic
+
 │   └── risk.py                         # Risk calculation functions
+
 │
+
 ├── models/
+
 │   └── lstm_hdfcbank.keras             # Trained LSTM model
+
 │
+
+├── Technical_Report.pdf                # Project technical report
+
 ├── runtime.txt                         # Python 3.11 for deployment
+
 ├── requirements.txt                    # Project dependencies
+
 └── README.md                           # Project documentation
 ```
 ---
@@ -229,5 +288,10 @@ statsmodels
 6. **POWERGRID** is the safest stock with lowest volatility
 
 ---
+## Team Members
 
+| Name | Enrollment No. |
+|------|---------------|
+| Kanishka Gupta | (23118037) |
+| (Friend's Name) | (23115018) |
  
