@@ -217,5 +217,5 @@ statsmodels
 | Name | Enrollment No. |
 |------|---------------|
 | Kanishka Gupta | (23118037) |
-| (Anurag Sain) | (23115018) |
+| Anurag Sain | (23115018) |
  
