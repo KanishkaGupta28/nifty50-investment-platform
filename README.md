@@ -9,7 +9,7 @@ An AI-powered investment intelligence platform that transforms 21 years of NIFTY
 
 ---
 ##  Live Demo
- [Click here to view the Live Dashboard](https://nifty50-investment-platformtettekpot9neqsrw84bevc.streamlit.app/)
+ [Click here to view the Live Dashboard](https://nifty50-investment-platform-tettekpot9neqsrw84bevc.streamlit.app/)
 
 ---
 
@@ -28,114 +28,38 @@ This platform provides:
 ##  Project Structure
 ```
 nifty50-investment-platform/
-
 │
-
 ├── app/
-
-│   └── dashboard.py                    # Streamlit web application (6 pages)
-
-│
-
+│   └── dashboard.py
 ├── data/
-
-│   ├── raw/
-
-│   │   └── stocks/
-
-│   │       └── stock_metadata.csv      # Company sector information
-
-│   └── processed/                      # Feature engineered data & results
-
-│       ├── all_stocks_featured.csv     # 117,464 rows × 37 features
-
-│       ├── portfolio_weights.csv       # Portfolio allocations (3 profiles)
-
-│       ├── portfolio_risk.csv          # Portfolio risk metrics
-
-│       ├── risk_metrics.csv            # Individual stock risk metrics
-
-│       └── hdfcbank_predictions.csv    # LSTM model predictions
-
-│
-
+│   ├── raw/stocks/
+│   │   └── stock_metadata.csv
+│   └── processed/
+│       ├── all_stocks_featured.csv
+│       ├── portfolio_weights.csv
+│       ├── portfolio_risk.csv
+│       ├── risk_metrics.csv
+│       └── hdfcbank_predictions.csv
 ├── notebooks/
-
-│   ├── 01_EDA.ipynb                    # Exploratory Data Analysis
-
-│   ├── 02_feature_engineering.ipynb    # Technical indicators (37 features)
-
-│   ├── 03_stock_predictor.ipynb        # LSTM deep learning model
-
-│   ├── 04_portfolio_construction.ipynb # Portfolio optimization
-
-│   └── 05_risk_assessment.ipynb        # Risk metrics & VaR analysis
-
-│
-
+│   ├── 01_EDA.ipynb
+│   ├── 02_feature_engineering.ipynb
+│   ├── 03_stock_predictor.ipynb
+│   ├── 04_portfolio_construction.ipynb
+│   └── 05_risk_assessment.ipynb
 ├── outputs/
-
-│   ├── best_worst_stocks.png
-
-│   ├── correlation_heatmap.png
-
-│   ├── drawdown_analysis.png
-
-│   ├── efficient_frontier.png
-
-│   ├── lstm_predictions.png
-
-│   ├── lstm_training_history.png
-
-│   ├── model_comparison.png
-
-│   ├── portfolio_allocation.png
-
-│   ├── portfolio_growth.png
-
-│   ├── reliance_price_volume.png
-
-│   ├── returns_distribution.png
-
-│   ├── risk_dashboard.png
-
-│   ├── sector_distribution.png
-
-│   ├── technical_indicators.png
-
-│   ├── var_analysis.png
-
-│   └── yearly_trend.png
-
-│
-
+│   └── (16 chart PNG files)
 ├── src/
-
-│   ├── data_loader.py                  # Data loading utilities
-
-│   ├── features.py                     # Feature engineering functions
-
-│   ├── models.py                       # ML model definitions
-
-│   ├── portfolio.py                    # Portfolio optimization logic
-
-│   └── risk.py                         # Risk calculation functions
-
-│
-
+│   ├── data_loader.py
+│   ├── features.py
+│   ├── models.py
+│   ├── portfolio.py
+│   └── risk.py
 ├── models/
-
-│   └── lstm_hdfcbank.keras             # Trained LSTM model
-
-│
-
-├── Technical_Report.pdf                # Project technical report
-
-├── runtime.txt                         # Python 3.11 for deployment
-
-├── requirements.txt                    # Project dependencies
-
-└── README.md                           # Project documentation
+│   └── lstm_hdfcbank.keras
+├── Technical_Report.pdf
+├── runtime.txt
+├── requirements.txt
+└── README.md
 ```
 ---
 
@@ -293,5 +217,5 @@ statsmodels
 | Name | Enrollment No. |
 |------|---------------|
 | Kanishka Gupta | (23118037) |
-| (Friend's Name) | (23115018) |
+| (Anurag Sain) | (23115018) |
  
